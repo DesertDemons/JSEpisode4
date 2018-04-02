@@ -70,7 +70,7 @@ function addTask() {
  	let newTask = createNewTask(taskString);
  
   	todoList.appendChild(newTask);
- 
+ 	alert("New task added to the list called ["+taskString+"]");
 	taskInput.value = '';
  };
 
@@ -117,4 +117,5 @@ function completeTask() {
 //this.parentNode.remove()
   let currentTask = this.parentNode;
   todoList.removeChild(this.parentNode);
+  alert("Item will be removed!");
 };
